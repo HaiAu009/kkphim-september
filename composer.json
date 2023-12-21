@@ -1,0 +1,32 @@
+{
+    "name": "haiau009/kkphim-september",
+    "description": "KKPhim's september theme",
+    "type": "library",
+    "authors": [
+        {
+            "name": "kkphim",
+            "email": "support@kkphim.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^6|^7|^8",
+        "ckfinder/ckfinder-laravel-package": "v3.5.2.1",
+        "haiau009/kkphim-core": "^1.1.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "KKPhim\\September\\": "src/",
+            "KKPhim\\September\\Database\\Factories\\": "database/factories/",
+            "KKPhim\\September\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "KKPhim\\September\\SeptemberServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
